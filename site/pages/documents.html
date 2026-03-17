@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документы — ИТЦ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/accessibility.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">
+      <img src="../img/logo-white.svg" alt="ИТЦ" class="logo-svg">
+    </a>
+    <div class="header-contacts">
+      <a href="mailto:itc@rb.ru" class="header-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        itc@rb.ru
+      </a>
+      <a href="tel:+78172230043" class="header-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        8 (8172) 23-00-43
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <span class="nav-link active">О нас <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></span>
+          <div class="dropdown">
+            <a href="about.html">Информация об учреждении</a>
+            <a href="documents.html">Документы</a>
+            <a href="certificates.html">Сертификаты, лицензии</a>
+            <a href="reports.html">Статистическая и бухгалтерская отчётность</a>
+            <a href="sout.html">Специальная оценка условий труда</a>
+            <a href="legal-help.html">Бесплатная юридическая помощь</a>
+            <a href="honor.html">Доска почёта</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="news.html" class="nav-link">Новости</a></li>
+        <li class="nav-item">
+          <span class="nav-link">Услуги <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></span>
+          <div class="dropdown">
+            <a href="it-service.html">Обслуживание ИТ-инфраструктуры</a>
+            <a href="expertise.html">Технические заключения</a>
+            <a href="security.html">Защита информации</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="vacancies.html" class="nav-link">Вакансии</a></li>
+      </ul>
+    </nav>
+    <button class="accessibility-btn" id="accessibilityToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      Для слабовидящих
+    </button>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== ACCESSIBILITY PANEL ===== -->
+<div class="a11y-panel" id="a11yPanel">
+  <div class="a11y-panel-inner">
+    <div class="a11y-group">
+      <span class="a11y-group-label">Шрифт:</span>
+      <button class="a11y-btn active" data-a11y-font="normal">А</button>
+      <button class="a11y-btn" data-a11y-font="medium">А+</button>
+      <button class="a11y-btn" data-a11y-font="large">А++</button>
+    </div>
+    <div class="a11y-group">
+      <span class="a11y-group-label">Цвет:</span>
+      <button class="a11y-btn-color a11y-btn-color--normal active" data-a11y-color="normal" title="Обычная">Аа</button>
+      <button class="a11y-btn-color a11y-btn-color--bw" data-a11y-color="bw" title="Чёрное на белом">Аа</button>
+      <button class="a11y-btn-color a11y-btn-color--wb" data-a11y-color="wb" title="Белое на чёрном">Аа</button>
+      <button class="a11y-btn-color a11y-btn-color--bc" data-a11y-color="bc" title="Синее на голубом">Аа</button>
+    </div>
+    <div class="a11y-group">
+      <span class="a11y-group-label">Изображения:</span>
+      <button class="a11y-btn active" data-a11y-images="on">Вкл</button>
+      <button class="a11y-btn" data-a11y-images="off">Выкл</button>
+    </div>
+    <div class="a11y-group">
+      <span class="a11y-group-label">Интервал:</span>
+      <button class="a11y-btn active" data-a11y-spacing="normal">1</button>
+      <button class="a11y-btn" data-a11y-spacing="medium">1.5</button>
+      <button class="a11y-btn" data-a11y-spacing="large">2</button>
+    </div>
+    <button class="a11y-btn-reset" id="a11yReset">Сбросить</button>
+  </div>
+</div>
+
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="../index.html">Главная</a> <span>/</span> <a href="#">О нас</a> <span>/</span> <span class="current">Документы</span>
+    </div>
+    <h1 class="page-hero-title">Документы</h1>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container page-content-grid">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <a href="about.html" class="sidebar-link">Информация об учреждении</a>
+        <a href="documents.html" class="sidebar-link active">Документы</a>
+        <a href="certificates.html" class="sidebar-link">Сертификаты, лицензии</a>
+        <a href="reports.html" class="sidebar-link">Отчётность</a>
+        <a href="sout.html" class="sidebar-link">Оценка условий труда</a>
+        <a href="legal-help.html" class="sidebar-link">Юридическая помощь</a>
+        <a href="honor.html" class="sidebar-link">Доска почёта</a>
+        <a href="contacts.html" class="sidebar-link">Контакты</a>
+      </nav>
+    </aside>
+
+    <div class="content-area">
+      <h1>Документы</h1>
+
+      <div class="doc-list">
+        <div class="doc-item">
+          <div class="doc-icon">&#128196;</div>
+          <div class="doc-info">
+            <div class="doc-title">Устав учреждения</div>
+            <div class="doc-meta">PDF, 1.2 МБ</div>
+          </div>
+          <a href="#" class="doc-download">Скачать</a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-icon">&#128196;</div>
+          <div class="doc-info">
+            <div class="doc-title">Свидетельство о государственной регистрации</div>
+            <div class="doc-meta">PDF, 0.5 МБ</div>
+          </div>
+          <a href="#" class="doc-download">Скачать</a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-icon">&#128196;</div>
+          <div class="doc-info">
+            <div class="doc-title">Положение об учреждении</div>
+            <div class="doc-meta">PDF, 0.8 МБ</div>
+          </div>
+          <a href="#" class="doc-download">Скачать</a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-icon">&#128196;</div>
+          <div class="doc-info">
+            <div class="doc-title">Государственное задание</div>
+            <div class="doc-meta">PDF, 2.1 МБ</div>
+          </div>
+          <a href="#" class="doc-download">Скачать</a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-icon">&#128196;</div>
+          <div class="doc-info">
+            <div class="doc-title">Коллективный договор</div>
+            <div class="doc-meta">PDF, 1.5 МБ</div>
+          </div>
+          <a href="#" class="doc-download">Скачать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-main">
+    <div>
+      <h3 class="footer-heading">О нас</h3>
+      <div class="footer-links">
+        <a href="about.html">Информация об учреждении</a>
+        <a href="documents.html">Документы</a>
+        <a href="certificates.html">Сертификаты, лицензии</a>
+        <a href="reports.html">Отчётность</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading">Услуги</h3>
+      <div class="footer-links">
+        <a href="it-service.html">Обслуживание ИТ-инфраструктуры</a>
+        <a href="expertise.html">Технические заключения</a>
+        <a href="security.html">Защита информации</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading">Контакты</h3>
+      <div class="footer-links">
+        <a href="tel:+78172230043">8 (8172) 23-00-43</a>
+        <a href="mailto:itc@rb.ru">itc@rb.ru</a>
+        <a href="#">г. Вологда, ул. Герцена, д. 27</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <div class="footer-logo">
+        <img src="../img/logo-white.svg" alt="ИТЦ" class="footer-logo-svg">
+        <div class="footer-info">Информационно-технологический центр<br>160000, Россия, г. Вологда, ул. Герцена, д. 27</div>
+      </div>
+      <div class="footer-copyright">&copy; 2010&mdash;2026 ИТЦ</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/accessibility.js"></script>
+</body>
+</html>
